@@ -2,10 +2,8 @@ npm install qrcode-terminal > /dev/null
 
 code=$(cat <<DELIMITER
 var qrcode = require('qrcode-terminal');
-qrcode.generate(process.argv[2], {small: true});
+qrcode.generate('$*', {small: true});
 DELIMITER
 )
 
-echo $code > tmp.js
-node tmp.js "$*"
-rm tmp.js
+echo $code | node

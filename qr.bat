@@ -2,7 +2,5 @@
 @setlocal EnableDelayedExpansion
 @set multiLine=var qrcode = require('qrcode-terminal'); ^
 
-qrcode.generate(process.argv[2], {small: true});
-@echo !multiLine! > tmp.js
-@node tmp.js "%*"
-@del tmp.js
+qrcode.generate('%*', {small: true});
+@echo !multiLine! | node
