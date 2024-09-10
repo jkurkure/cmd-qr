@@ -1,2 +1,48 @@
 # cmd-qr
-Windows command-line QR code generator.
+Command-line QR code generator. Download qr.bat for Windows and qr for Linux (or Mac). Requires the Node.js runtime. Set your terminal to dark mode for ideal outcomes.
+
+## Usage
+### On Windows:
+```
+qr Example text to be QR-encoded
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▀█▀█ █▀▀▄█ ▄▄▄▄▄ █
+█ █   █ █▀▀▀█▀▀▄▀██ █   █ █
+█ █▄▄▄█ █▀ █▄███▀▄█ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄▀ █▄█▄▀▄█▄▄▄▄▄▄▄█
+█ ▄ ▄ █▄  ▄▀▀▄█ ▄█▄█ █ █▄██
+███▄▄ ▀▄ ▄█▄█▄█▀▄   ▀███▄ █
+█▀▄  ██▄ █ ▄▀▄█ █▀ ▄ ▄▄ ▀██
+█ █▀██▀▄ █▀▀▀█▄█ ▀█▀████  █
+█▄██▄█▄▄█▀█▄ ▄ █▄ ▄▄▄ ▀▄▄ █
+█ ▄▄▄▄▄ █▄█ ▀▀█ █ █▄█ ▄█  █
+█ █   █ █ ▄█▀▄▄▄ ▄  ▄ ▄  ▀█
+█ █▄▄▄█ █ ▀▀▀▄█  ▀ ▀▀█▄██ █
+█▄▄▄▄▄▄▄█▄▄▄▄▄▄▄▄██▄▄█▄▄▄▄█
+```
+
+Put the file in ```C:\Windows\System32``` to be able to run the command from anywhere
+
+
+### On Linux:
+```
+./qr https://www.youtube.com/watch?v=LddPjRM7pR0
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▄▄███ ▀█▄  ▄▄█ ▄▄▄▄▄ █
+█ █   █ █ ▀█ ▄▄▀▀ ▀ ▀▄█ █   █ █
+█ █▄▄▄█ █▄ ▄▄▀███ ▀▀ ▀█ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄▀▄▀▄█ █ ▀ ▀ █▄▄▄▄▄▄▄█
+█ ▄ ▄▀▀▄▀ ▀███ ▄█ ▄▄ ▀▄▀▀ ▄▄█ █
+██ ▀ ▄▀▄█▄██▀▀▀▀███ █ ▀   █▄▄▀█
+█▄▄  █▀▄▀▄▄▀ █▄█ ▀ █ ▀█▀▀█▄ ▀▀█
+█▀▄▄▄ ▀▄▀▀▄██ █ ▀ ██▄ ▄▀  █▄ ▄█
+█▄▀▀▄█ ▄▀▀█▄▄▀ ▀▄██ █  █▀▄ ▀ ██
+█▄█▄ ▄▄▄ ▄█▀▄ █▀▄ ▀█▀▀▀█▄██ ███
+██▄▄█▄█▄█▀ ▄▄ ▄ ▄█▄ ▄ ▄▄▄   ▀▀█
+█ ▄▄▄▄▄ ██▄ ▄▄ ▄▀██▀▄ █▄█  █ ██
+█ █   █ █▀▀█▀ ▄█  ▄█▀  ▄▄ ▀▄▄ █
+█ █▄▄▄█ █ █▀ █▄██▀█▀▀▀▄█ █▀▄▀▄█
+█▄▄▄▄▄▄▄█▄█▄███▄▄▄██▄▄████▄█▄██
+```
+
+You will probably have to do a quick ```chmod +x qr``` first
